@@ -11,7 +11,7 @@ npm install
 npm run serve
 ```
 
-### Cóigo utilizado para buscar os pokemons na api [*PokéAPI*](https://pokeapi.co/)
+### Código utilizado para buscar os pokemons na api [*PokéAPI*](https://pokeapi.co/)
 `for (let index = 1; index <= 150; index++) {
   this.pokemons.push(await PokedexService.buscarUrl(index));
 }`
