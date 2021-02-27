@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="main">
     <b-container>
-      <div>Pokedex</div>
+      <div class="title">Pokedex</div>
       <b-row class="grid">
         <div v-for="(pokemon, index) in pokemons" :key="index">
           <b-card :class="`card ${pokemon.types[0].type.name}`">
@@ -40,21 +40,24 @@ export default {
 
 </script>
 <style scoped>
+.title {
+  margin: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
 .grid {
   display: grid;
-  grid-area: 'card card card';
-  grid-template-columns:  1fr 1fr 1fr;
+  grid-area: 'card card card card card';
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
 }
 
 .card {
-  display: flex;
   margin: 20px;
   border: none;
   border-radius: 30px;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
-  min-height: 280px;
-  padding: 0px;
-  max-width: 300px;
+  min-height: 270px;
+  padding: 12px;
 }
 
 .name {
@@ -63,6 +66,7 @@ export default {
  text-transform: capitalize;
  color: white;
  text-align: center;
+ margin-top: 16px;
 }
 
 .indice {
@@ -85,6 +89,7 @@ export default {
   border-radius: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   margin-top: 12px;
 }
@@ -100,7 +105,8 @@ export default {
   background-image: url("../assets/ball.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-right: 0px;
+  padding-top: 12px !important;
+  margin: 0px 4px 0px 6px;
 }
 .col {
   padding: 0px;
