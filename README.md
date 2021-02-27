@@ -25,4 +25,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Inspirational design
-![*Este design foi utilizado como inspiração para desenvolvimento deste projeto*]([[https://d33wubrfki0l68.cloudfront.net/f54808f5033f658fa051f9ec766e9dec80c94692/b0029/images/lets-review-pokedex/screens.png]])
+![*Este design foi utilizado como inspiração para desenvolvimento deste projeto*](https://d33wubrfki0l68.cloudfront.net/f54808f5033f658fa051f9ec766e9dec80c94692/b0029/images/lets-review-pokedex/screens.png)
